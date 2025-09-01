@@ -1,0 +1,29 @@
+.trafficLight{
+    background-image: url('./assets/AllOff.jpg');
+    background-size: contain;
+}
+.trafficLight,
+.container {
+    width:600px;
+    height:600px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.trafficLight div{
+    border-radius: 100%;
+    background-color: black;
+    height: 100px;
+    position: relative;
+    cursor: pointer;
+    aspect-ratio: 1 /1;
+}
+.red.active ~.container.red {
+    background-image: url('/src/assets/Red.jpg');
+}
+.yellow{
+    bottom: 50px;
+}
+.green{
+    bottom: 100px;
+}
